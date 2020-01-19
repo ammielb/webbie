@@ -1,0 +1,40 @@
+
+#bday{
+    background-color:rgb(43, 141, 117);
+
+}
+.jaar>div{
+    float: left;
+
+    height:200px;
+    width:250px;
+    margin: 1px 1px 1px 1px;
+}
+table {
+    text-align: center;
+    border:double;
+    border-collapse: collapse;
+  }
+th{
+    color: white;
+    background-color: rgb(9, 49, 129);
+}
+.weekvaag{    
+    background-color: rgba(0, 0, 139, 0.829);
+    color: rgba(255, 255, 255, 0.548);
+}
+.werkvaag{    
+    background-color: rgba(100, 148, 237, 0.651);
+    color: rgba(255, 255, 255, 0.63);
+}
+
+ .werkdag{
+     background-color: cornflowerblue;
+     color: white;
+     border:0px;
+ }
+ .weekend{
+    background-color: darkblue;
+    color: white;
+    background-origin: initial;
+}

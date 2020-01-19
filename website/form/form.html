@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio button</title>
+<link rel="stylesheet" href="form.css">
+
+<body class="grad">
+    <div width="300px"id="grad">
+    <center>
+    <form name="formulier"action="form.php" method="POST">
+    <!--<label for="naam">voornaam</label>-->
+   
+<p><b>Voornaam:</b><br>
+    <input type="text" name="naam"class="text" pattern="[A-Z]{n*}[a-z]{n*}" placeholder="Geef Uw VoorNaam..." required></p>
+
+<p><b>Achternaam:</b><br>
+    <input type="text" name="Anaam" class="text" pattern="[A-Z]{n*}[a-z]{n*}" placeholder="Geef Uw AchterNaam..." required></p>
+
+<p><b>E-mail:</b><br>
+    <input type="email" name="email" id="email"pattern="[A-Z][a-z][0-9]{n*}@{1}[A-Z][a-z][0-9]\.{1}[a-z]{n*}" placeholder="Geef Uw E-Mail"></p>
+
+<p><!--<b>Geslacht</b>-->
+   <select required class="text_geslacht" name="geslacht"id="geslacht"placeholder="Geef Uw Geslacht Aan">
+
+    <option>geslacht</option>
+    <option class="option"value="Man">Man</option>
+    <option class="option"value="Vrouw">Vrouw</option>
+    <option class="option"value="Andere">Andere</option>
+</select>
+
+          <!--<p><b>Uw Leeftijd:</b>-->
+    <!-- <input type="number" class="leeftijd" id="age"name="age" id="age" max="150" min="1" placeholder="Leeftijd"> -->
+</p>
+               <!--Opmerking-->
+<p><b>Opmerkingen:</b><br>
+    <textarea class="text"type="text" name="opmerkingen" id="opmerkingen" placeholder="Geef Hier Uw Opmerkingen">
+    </textarea>
+</p>
+
+    <!-- radio button voor bloemen uittekiezen-->
+<p class="bloem"><b>welke bloem(en) wilt u</b></p>
+        <div class="gids">
+        <input type="checkbox"  name="gids[]" value="De Roos" />De Roos<br />
+        <input type="checkbox" name="gids[]" value="De Tulp" />De Tulp<br />
+        <input type="checkbox" name="gids[]" value="De Lavendel" />De Lavendel<br />
+        <input type="checkbox" name="gids[]" value="De Ortencia" />De Ortencia<br />
+    </div>
+
+
+<p class="radio"required><b>Hoe goed vond u <br>uw ervaring met deze website?</b></p>
+<div class="gids">
+<input type="radio" name="rating" id="rating" value="Slecht">Slecht<br> 
+<input type="radio" name="rating" id="rating" value="Matig">Matig<br>
+<input type="radio" name="rating" id="rating" value="Goed">Goed<br>
+</div>
+<input type="submit" value="verzenden">
+</form>
+
+</center>
+</body>
+</html>
